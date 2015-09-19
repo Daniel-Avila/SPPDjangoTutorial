@@ -12,21 +12,26 @@ Base Tools you will need to install are:
 git
 ---
 
+If you are happy with or just want to learn command line git you can use:
 https://git-scm.com/download/win
 
-The SSPDjangoTutorial Repository
---------------------------------
+GUI? You have an option!
+https://desktop.github.com/
 
-over ssh:
-git clone git@github.com:Daniel-Avila/SPPDjangoTutorial.git
+Either one the choice is up to you.
 
-Or HTTPS:
-
-git clone https://github.com/Daniel-Avila/SPPDjangoTutorial.git
 
 Python 3.5
 ----------
 https://www.python.org/downloads/release/python-350/
+
+By default Python installs on a fairly long path.
+
+For sanity's sake I recommend doing a custom install and making the install
+directory C:\\Python35
+
+If you choose a different install location just keep that in mind when following
+the rest of this setup document.
 
 PIP
 ---
