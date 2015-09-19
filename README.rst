@@ -14,6 +14,16 @@ git
 
 https://git-scm.com/download/win
 
+The SSPDjangoTutorial Repository
+--------------------------------
+
+over ssh:
+git clone git@github.com:Daniel-Avila/SPPDjangoTutorial.git
+
+Or HTTPS:
+
+git clone https://github.com/Daniel-Avila/SPPDjangoTutorial.git
+
 Python 3.5
 ----------
 https://www.python.org/downloads/release/python-350/
