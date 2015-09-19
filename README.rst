@@ -42,11 +42,11 @@ py -3.4 -m pip install SomePackage  # specifically Python 3.4
 py -3.5 -m pip install SomePackage  # specifically Python 3.5
 
 But not to worry if you don't. The pip you want to use should be located in
-C:\Python35\Scripts\pip.exe
+C:\\Python35\\Scripts\\pip.exe
 
 So if bad comes to worse just do:
 
-C:\Python35\Scripts\pip install virtualenv
+C:\\Python35\\Scripts\\pip install virtualenv
 
 Virtualenv-wrapper (for your platform)
 --------------------------------------
@@ -55,7 +55,7 @@ easier to use. It would be a good thing to read up on how to use it.
 
 For now here is the command to install it!
 
-C:\Python35\Scripts\pip install virtualenvwrapper-win
+C:\\Python35\\Scripts\\pip install virtualenvwrapper-win
 
 Once you install it there are some helpful environment variables you will want to set.
 I trust that you can read documentation so have a look here and trick-out your mighty mighty hax0r box. :)
