@@ -9,6 +9,11 @@ I will point to will cover MSWindows installs.
 
 Base Tools you will need to install are:
 
+git
+---
+
+https://git-scm.com/download/win
+
 Python 3.5
 ----------
 https://www.python.org/downloads/release/python-350/
