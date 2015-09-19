@@ -28,17 +28,20 @@ I'm not going to make you look it up the command.
 
 Open up a windows command line and run the following command
 
-`Gotcha`
+|*Gotcha*
 If you have more than one version of Python installed how do you know if you are using pip installed with
 Python 3.5?
 
 If you have the python launcher installed you could do this:
 
+py -2 -m pip install SomePackage  # default Python 2
 
-py -2   -m pip install SomePackage  # default Python 2
 py -2.7 -m pip install SomePackage  # specifically Python 2.7
-py -3   -m pip install SomePackage  # default Python 3
+
+py -3 -m pip install SomePackage  # default Python 3
+
 py -3.4 -m pip install SomePackage  # specifically Python 3.4
+
 py -3.5 -m pip install SomePackage  # specifically Python 3.5
 
 But not to worry if you don't. The pip you want to use should be located in
