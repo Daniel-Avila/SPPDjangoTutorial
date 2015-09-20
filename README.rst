@@ -1,88 +1,64 @@
-Welcome to the SPP Django Tutorial Workshop!
+Step 1
 ============================================
 
-Before you can start you need to make sure you have the
-following installed and working on your machine.
+Now that you have the tools installed and have chosen your favorite editor we get to set up our environment.
 
-It is assumed that you are using a MSWindows machine so the documentation
-I will point to will cover MSWindows installs.
+This is where Python virtualenv comes into play.
 
-Base Tools you will need to install are:
+First we need to make our virtual environment
 
-git
----
+From the command line run the command
 
-If you are happy with or just want to learn command line git you can use:
-https://git-scm.com/download/win
+C:\\mkvirtualenv SPPDjango
 
-GUI? You have an option!
-https://desktop.github.com/
+Voila! You now have a self contained python environment to work in. You should see that your command line is now
+decorated with your active python environment.
 
-Either one the choice is up to you.
+Let's close this environment for now. Run the command
 
+C:\\deactivate
 
-Python 3.5
-----------
-https://www.python.org/downloads/release/python-350/
+And now you have closed the virtual environment. You can make multiple virtual environments each with it's own configuration
+without any danger of cross contamination. Now run the command:
 
-By default Python installs on a fairly long path.
+C:\\workon
 
-For sanity's sake I recommend doing a custom install and making the install
-directory C:\\Python35
+And you should see a list of virtual environments which you have created to activate one just run:
 
-If you choose a different install location just keep that in mind when following
-the rest of this setup document.
+C:\\workon SPPDjango
 
-PIP
----
-Today is your lucky day! Pip is included in Python 3.4+ Move along people
-nothing to see here. :)
+Step 2
+======
 
-Virtualenv (for your platform)
-------------------------------
+First it will help if you make a project directory. You can name it anything you wish. PythonProjects or Projects
+would probably do well. For this text I will assume PythonProjects
 
-Virtualenv allows us to create isolated python environments. Without it we are
-installing everything globally and that can turn into a really big confusing mess.
+C:\\mkdir PythonProjects
+C:\\cd PythonProjects
+C:\\workon SPPDjango
 
-I'm not going to make you look it up the command.
+Step 3
+======
 
-Open up a windows command line and run the following command
+Now you are ready to fetch the repository into your PythonProjects directory
 
-|*Gotcha*
-If you have more than one version of Python installed how do you know if you are using pip installed with
-Python 3.5?
+From the command line you can simply say
 
-If you have the python launcher installed you could do this:
+C:\\git clone https://github.com/Daniel-Avila/SPPDjangoTutorial.git
 
-py -2 -m pip install SomePackage  # default Python 2
+Or
 
-py -2.7 -m pip install SomePackage  # specifically Python 2.7
+C:\\git clone git@github.com:Daniel-Avila/SPPDjangoTutorial.git
 
-py -3 -m pip install SomePackage  # default Python 3
+If you have ssh configured for your machine.
 
-py -3.4 -m pip install SomePackage  # specifically Python 3.4
+Step 4
+======
 
-py -3.5 -m pip install SomePackage  # specifically Python 3.5
+And now for stuff to install
 
-But not to worry if you don't. The pip you want to use should be located in
-C:\\Python35\\Scripts\\pip.exe
+use pip to install the following packages
 
-So if bad comes to worse just do:
-
-C:\\Python35\\Scripts\\pip install virtualenv
-
-Virtualenv-wrapper (for your platform)
---------------------------------------
-Virtual Environment Wrapper is a set of tools to make using python virtual environments
-easier to use. It would be a good thing to read up on how to use it.
-
-For now here is the command to install it!
-
-C:\\Python35\\Scripts\\pip install virtualenvwrapper-win
-
-Once you install it there are some helpful environment variables you will want to set.
-I trust that you can read documentation so have a look here and trick-out your mighty mighty hax0r box. :)
-
-https://pypi.python.org/pypi/virtualenvwrapper-win
-
-Once you get that done and working you are ready to start the tutorial!
+pip install selenium
+pip install model_mommy
+pip install django
