@@ -40,4 +40,3 @@ python functional_tests.py
 
 It should pass!
 
-python manage runserver
