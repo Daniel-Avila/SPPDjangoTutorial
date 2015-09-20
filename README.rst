@@ -1,65 +1,26 @@
-Step 1
-============================================
+Starting the Project!
+=====================
 
-Now that you have the tools installed and have chosen your favorite editor we get to set up our environment.
+Every thing is installed and the first functional test is written
+and failing as expected so now we have to fix our test!
 
-This is where Python virtualenv comes into play.
+So let's make a django project called superlist by running the following command:
 
-First we need to make our virtual environment
+django-admin.py startproject superlist
 
-From the command line run the command
+And you should end up with a file tree that looks like this
 
-C:\\mkvirtualenv SPPDjango
+.
+├── functional_tests.py
+├── README.rst
+├── requirements.txt
+└── superlist
+    ├── manage.py
+    └── superlist
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
 
-Voila! You now have a self contained python environment to work in. You should see that your command line is now
-decorated with your active python environment.
-
-Let's close this environment for now. Run the command
-
-C:\\deactivate
-
-And now you have closed the virtual environment. You can make multiple virtual environments each with it's own configuration
-without any danger of cross contamination. Now run the command:
-
-C:\\workon
-
-And you should see a list of virtual environments which you have created to activate one just run:
-
-C:\\workon SPPDjango
-
-Step 2
-======
-
-First it will help if you make a project directory. You can name it anything you wish. PythonProjects or Projects
-would probably do well. For this text I will assume PythonProjects
-
-C:\\mkdir PythonProjects
-C:\\cd PythonProjects
-C:\\workon SPPDjango
-
-Step 3
-======
-
-Now you are ready to fetch the repository into your PythonProjects directory
-
-From the command line you can simply say
-
-C:\\git clone https://github.com/Daniel-Avila/SPPDjangoTutorial.git
-
-Or
-
-C:\\git clone git@github.com:Daniel-Avila/SPPDjangoTutorial.git
-
-If you have ssh configured for your machine.
-
-Step 4
-======
-
-And now for stuff to install
-
-use pip to install the following packages
-
-pip install ipython
-pip install selenium
-pip install model_mommy
-pip install django
+From now on we are going to be doing the vast majority of our work in the top level superlist directory
+so lets move functional_tests.py into that directory as well as requirements.txt
