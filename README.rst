@@ -35,27 +35,25 @@ would probably do well. For this text I will assume PythonProjects
 
 C:\\mkdir PythonProjects
 C:\\cd PythonProjects
+C:\\mkdir superlist
+C:\\cd superlist
 C:\\workon SPPDjango
 
 Step 3
 ======
 
-Now you are ready to fetch the repository into your PythonProjects directory
+Now you are ready to make your directory into a git repository
 
-From the command line you can simply say
+Make sure you are in your *superlist* directory and type the command
 
-C:\\git clone https://github.com/Daniel-Avila/SPPDjangoTutorial.git
+git init
 
-Or
-
-C:\\git clone git@github.com:Daniel-Avila/SPPDjangoTutorial.git
-
-If you have ssh configured for your machine.
 
 Step 4
 ======
 
-And now for stuff to install
+And now for stuff to install. Make sure you are in your virtual environment for the tutorial by running workon SPPDjango
+if you are not sure.
 
 use pip to install the following packages
 
