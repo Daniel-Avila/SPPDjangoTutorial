@@ -1,43 +1,33 @@
-Starting the Project!
-=====================
+Testing Frameworks
+==================
 
-Every thing is installed and the first functional test is written
-and failing as expected so now we have to fix our test!
+OK our first test does test something but it is not very helpful.
 
-So let's make a django project called superlist by running the following command:
+We could manually add support code to print out messages when a tests passes
+and a more useful message when a test fails.
 
-django-admin.py startproject superlist
+But Testing is well supported in python and there are testing frameworks that will handle that for us.
 
-And you should end up with a file tree that looks like this
+The defacto test framework in python is called *unittest*. Despite the name it can be used for any number of types
+of tests. In this case we are going to use it to help improve our functional tests.
 
-.
-├── functional_tests.py
-├── README.rst
-├── requirements.txt
-└── superlist
-    ├── manage.py
-    └── superlist
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-
-From now on we are going to be doing the vast majority of our work in the top level superlist directory
-so lets move functional_tests.py into that directory as well as requirements.txt
-
-Now we are ready to run Django and see if our functional_tests will pass. You are going to need two terminal windows for this.
+IMHO *unittest* should be renamed something like *autotest* but nobody listens to me.
 
 
+At the top of the file functional_test.py add the line
 
-on the command line run the following command
+import unittest
 
-python manage.py runserver
+And we are going to define a class called *HomePage* which extends *unttest.TestCase*
 
-And then go to a second terminal and run the command
+Doing this gives us access to the test harness and quite a few enhancements to make testing easier.
 
-python functional_tests.py
+In our case we need to open up a browser before each test and close it down after each test. Our parent class *TestCase*
+provides us with some hooks to do this
 
+*setUp*
+*tearDown*
 
-It should pass!
+|History: setUp and tearDown break the python convention by using camel case. This is because unittest was originally a
+port of JUnit for Python.
 
-python manage runserver
