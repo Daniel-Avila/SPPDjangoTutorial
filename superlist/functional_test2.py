@@ -17,6 +17,8 @@ class HomePage(unittest.TestCase):
         result = self.browser.title
         self.assertIn(expected, result)
 
+if __name__ == '__main__':
+    unittest.main()
 
 #    def test_<reasonable_name>(self):
         # """Human readable description of the test goes here.
