@@ -59,6 +59,7 @@ And now for stuff to install
 
 use pip to install the following packages
 
+pip install ipython
 pip install selenium
 pip install model_mommy
 pip install django
