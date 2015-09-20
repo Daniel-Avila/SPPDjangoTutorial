@@ -20,7 +20,7 @@ class HomePage(unittest.TestCase):
         expected = 'To-Do'
         actual = self.browser.title
         self.assertIn(expected, actual)
-
+        self.fail('this test is not finished!')
         # She is invited to enter a to-do item straight away
 
         # She types "Buy peacock feathers" into a text box (Edith's hobby
